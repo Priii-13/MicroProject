@@ -3,7 +3,7 @@
 -------------------------------------------------- */
 const DB_NAME   = "SCHOOL-DB";
 const REL_NAME  = "STUDENT-TABLE";
-const BASE_URL  = "http://api.login2explore.com:5577";
+const BASE_URL  = "https://api.login2explore.com:5577";
 const TOKEN     = "90934561|-31949212883518373|90956574";
 const IRL       = "/api/irl";
 const IML       = "/api/iml";
