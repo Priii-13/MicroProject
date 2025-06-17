@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <div class="container">
+    <h2>Student Registration</h2>
+
+    <form id="studentForm" method="post" onsubmit="return false;">
+      <!-- Roll No -->
+      <div class="form-group">
+        <label for="rollNo">Roll&nbsp;No</label>
+        <input type="text" id="rollNo" onchange="getStudent()" />
+      </div>
+
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="fullName">Full&nbsp;Name</label>
+        <input type="text" id="fullName" />
+      </div>
+
+      <!-- Class -->
+      <div class="form-group">
+        <label for="class">Class</label>
+        <input type="text" id="class" />
+      </div>
+
+      <!-- Birth Date -->
+      <div class="form-group">
+        <label for="birthDate">Birth&nbsp;Date</label>
+        <input type="date" id="birthDate" />
+      </div>
+
+      <!-- Address -->
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" />
+      </div>
+
+      <!-- Enrollment Date -->
+      <div class="form-group">
+        <label for="enrollDate">Enrollment&nbsp;Date</label>
+        <input type="date" id="enrollDate" />
+      </div>
+
+      <!-- Action buttons -->
+      <div class="btn-group">
+        <button type="button" id="save"   onclick="saveData()"   disabled>Save</button>
+        <button type="button" id="change" onclick="changeData()" disabled>Change</button>
+        <button type="button" id="reset"  onclick="resetForm()"  disabled>Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <script src ="index.js"></script>
+  <script src=" http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js "></script>
+   </body>
+</html>
